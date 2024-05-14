@@ -1,0 +1,35 @@
+body {
+}
+
+#colorMode {
+    align-self: flex-end;
+    margin: 4px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#title {
+    font-weight: normal;
+}
+
+#textInputForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+#termDisplay {
+    font-size: 4em;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

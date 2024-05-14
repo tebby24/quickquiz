@@ -1,25 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quick Quiz</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
+
 <body>
-    <h1>Split Text Display</h1>
-    <form id="textInputForm">
-        <label for="userInput">Enter Terms:</label>
-        <textarea id="userInput" name="userInput" rows="10" cols="50" required></textarea>
-        <br>
-        <button type="button" onclick="submitForm()">Submit</button>
-    </form>
-    
-    <script>
-        function submitForm() {
-            const userInput = document.getElementById('userInput').value;
-            sessionStorage.setItem('userInput', userInput);
-            window.location.href = 'quiz.html';
-        }
-    </script>
+    <a id="colorMode" href="">dark mode</a>
+    <div class="container">
+        <h1 id="title">Quick Quiz</h1>
+        <form id="textInputForm">
+            <label for="userInput">Enter Terms:</label>
+            <textarea id="userInput" name="userInput" placeholder="term 1\nterm 2\nterm 3\n..." rows="10" cols="40"
+                required></textarea>
+            <br>
+            <button type="button" onclick="submitForm()">Start Quiz</button>
+        </form>
+    </div>
+
+    <script src="js/index.js"></script>
 </body>
+
 </html>
