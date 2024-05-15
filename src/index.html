@@ -9,12 +9,12 @@
     <link rel="stylesheet" href="css/index.css">
 </head>
 
-<body>
-    <a id="colorMode" href="">dark mode</a>
+<body class="lightMode">
+    <button id="switchColorModeBtn"></button>
     <div class="container">
-        <h1 id="title">Quick Quiz</h1>
+        <h1>Quick Quiz</h1>
         <form id="textInputForm">
-            <label for="userInput">Enter Terms:</label>
+            <label for="userInput">Enter terms:</label>
             <textarea id="userInput" name="userInput" placeholder="term 1\nterm 2\nterm 3\n..." rows="10" cols="40"
                 required></textarea>
             <br>
@@ -23,6 +23,7 @@
     </div>
 
     <script src="js/index.js"></script>
+    <script src="js/colorMode.js"></script>
 </body>
 
 </html>

@@ -9,4 +9,29 @@ html {
     align-items: center;
 }
 
+h1 {
+    font-weight: normal;
+}
 
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.lightMode {
+    background-color: #fff;
+    color: #333;
+}
+
+.darkMode {
+    background-color: #333;
+    color: #fff;
+}
+
+#switchColorModeBtn {
+    align-self: flex-end;
+    margin: 6px;
+}
