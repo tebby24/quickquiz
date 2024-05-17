@@ -1,0 +1,28 @@
+body,
+html {
+    height: 100%;
+    width: 100%;
+    margin: 10px;
+    display: block;
+}
+
+h1, h2 {
+    margin-bottom: 3px;
+}
+
+
+#settingsForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+    gap: 5px;
+}
+
+.formItem {
+    text-indent: 20px;
+}
+
+#saveButton {
+    margin-top: 30px;
+}

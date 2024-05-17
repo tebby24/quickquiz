@@ -5,4 +5,14 @@
     align-items: start;
 }
 
+.lightTheme textArea {
+    color: black;
+    background-color: #f8f9fa;
+}
+
+.darkTheme textArea {
+    color: white;
+    background-color: #181818;
+}
+
 

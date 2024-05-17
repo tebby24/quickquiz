@@ -9,10 +9,13 @@ html {
     align-items: center;
 }
 
-h1 {
+h1, h2, h3 {
     font-weight: normal;
 }
 
+a {
+    color: #4287f5;
+}
 .container {
     display: flex;
     flex-direction: column;
@@ -21,14 +24,19 @@ h1 {
     height: 100%;
 }
 
-.lightMode {
+.lightTheme {
     background-color: #fff;
     color: #333;
 }
 
-.darkMode {
-    background-color: #333;
+.darkTheme {
+    background-color: #212121;
     color: #fff;
+}
+
+#settingsLink {
+    align-self: flex-end;
+    margin: 8px;
 }
 
 #switchColorModeBtn {

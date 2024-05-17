@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Settings</title>
+        <link href="css/base.css" rel="stylesheet">
+        <link href="css/settings.css" rel="stylesheet">
+    </head>
+    <body>
+
+        <h1 style="text-align: center;">Settings</h1>
+        <form id="settingsForm">
+            <h2>General</h2>
+            <div class="formItem">
+                <label for="colorThemeSelect">Color theme: </label>
+                <select name="colorTheme" id="colorThemeSelect">
+                    <option value="light">light</option>
+                    <option value="dark">dark</option>
+                </select>
+            </div>
+            <h2>Keyboard shortcuts</h2> 
+            <div class="formItem">
+                <label for="passTermShortcut">Pass term: </label>
+                <input type="text" size="1" maxlength="1" id="passTermShortcut">
+            </div>
+            <div class="formItem">
+                <label for="failTermShortcut">Fail term: </label>
+                <input type="text" size="1" maxlength="1" id="failTermShortcut">
+            </div>
+            <button id="saveButton" type="button" onclick="submitForm()">Save</button>
+        </form>
+        <script src="js/settings.js"></script>
+        <script src="js/colorTheme.js"></script>
+    </body>
+</html>

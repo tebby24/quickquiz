@@ -69,3 +69,17 @@ failButton.addEventListener("click", () => {
     quiz.fail()
     showNextTerm()
 })
+
+passTermShortcut = localStorage.getItem('passTermShortcut')
+failTermShortcut = localStorage.getItem('failTermShortcut')
+
+
+document.addEventListener('keydown', function(event) {
+    if (event.key === passTermShortcut) {
+        quiz.pass();
+        showNextTerm();
+    } else if (event.key === failTermShortcut) {
+        quiz.fail();
+        showNextTerm();
+    }
+});
