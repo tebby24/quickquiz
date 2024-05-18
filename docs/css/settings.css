@@ -21,6 +21,7 @@ h1, h2 {
 
 .formItem {
     text-indent: 20px;
+    text-align: right;
 }
 
 #saveButton {
